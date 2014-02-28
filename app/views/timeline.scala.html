@@ -1,0 +1,65 @@
+@(title:String, tweets:Array[TweetModel])
+
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <title>@title</title>
+  <link rel="stylesheet" type="text/css" href="//www.css-reset.com/css/meyer.css" />
+  <link rel="stylesheet" type="text/css" href="@routes.Assets.at("stylesheets/style.css")" />
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+  <script src="@routes.Assets.at("javascripts/script.js")"></script>
+</head>
+<body>
+  <div id="wrapper">
+
+    <header>
+      <h1><a href="#">@title</a></h1>
+    </header>
+
+    <div id="content">
+
+      <div class="module">
+        <form id="form" action="/post" method="post">
+          <textarea type="text" name="message" placeholder="いま、なにしてる？"></textarea>
+          <input type="submit" value="tweet" />
+        </form>
+      </div>
+
+      <section id="main" class="module">
+        <h2>ツイート</h2>
+        <ul id="tweets">
+@tweets.map { tweet =>
+          <li>
+            <div class="tweet-header">
+              <a href="#">
+                <img src="//abs.twimg.com/sticky/default_profile_images/default_profile_6_bigger.png" class="icon" />
+                <strong class="name">@tweet.name</strong>
+              </a>
+              <span class="screen_name">@@@tweet.screen_name</span>
+              <span class="time">@tweet.created_at</span>
+            </div><!--/.tweet-header-->
+            <div class="tweet-text">
+              <p class="text">@tweet.text</p>
+            </div><!--/.tweet-header-->
+          </li>
+}
+        </ul>
+      </section><!--/#main-->
+
+    </div><!--/#content-->
+
+
+    <footer>
+      <small>
+        <a href="//www.geishatokyo.com/">
+          geishatokyo.com
+        </a>
+      </small>
+    </footer>
+
+
+  </div><!--/#wrapper-->
+</body>
+</html>

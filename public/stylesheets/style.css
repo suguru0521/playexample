@@ -1,0 +1,152 @@
+@charset "UTF-8";
+
+
+html,body{
+  height:100%;
+}
+
+body{
+  background-color:#55ACEE;
+}
+
+a{
+  text-decoration:none;
+}
+
+a:hover{
+  text-decoration:underline;
+}
+
+header{
+  background-color:#FFFFFF;
+  height:48px;
+  line-height:48px;
+}
+
+footer{
+  margin-top:40px;
+  text-align:center;
+  color:#FFFFFF;
+}
+
+footer a{
+  color:#FFFFFF;
+}
+
+small{
+  font-size:12px;
+}
+
+h1{
+  font-size:40px;
+  text-indent:1em;
+}
+
+h2{
+  color:#66757f;
+  font-size:24px;
+  line-height:40px;
+  border-bottom:1px solid #66757f;
+}
+
+h1 a{
+  display:block;
+  width:100%;
+  height:100%;
+  text-decoration:none;
+  color:#66757f;
+}
+
+h1 a:hover{
+  text-decoration:none;
+}
+
+#content{
+  padding:20px;
+}
+
+.module{
+  background-color:#FFFFFF;
+  border-radius:5px;
+  padding:12px;
+  width:640px;
+  margin:8px auto;
+}
+
+
+#form textarea{
+  width:100%;
+  min-height:64px;
+  border-radius:3px;
+  margin:2px auto;
+  font-size:15px;
+}
+
+#form input[type="submit"]{
+  width:120px;
+  height:48px;
+  background-color:#DDDDDD;
+  margin:2px auto;
+  border:none;
+  border-radius:3px;
+  cursor:pointer;
+  color:#FFFFFF;
+  font-size:18px;
+  font-weight:bold;
+}
+
+#form input.active,
+#form input[type="submit"]:hover{
+  background-color:#55ACEE;
+}
+
+#main{
+}
+
+
+
+#tweets{
+  margin:20px auto;
+}
+
+#tweets li{
+  min-height:60px;
+  padding:4px;
+  padding-left:68px;
+  border-bottom:1px solid #E1E8ED;
+  font-size:13px;
+}
+
+#tweets li .tweet-header{
+  margin:4px 0;
+}
+
+#tweets li .tweet-text{
+}
+
+#tweets li .name{
+  font-weight:bold;
+  font-size:14px;
+  color:#292f33;
+}
+#tweets li .icon{
+  float:left;
+  margin-top:3px;
+  margin-left:-58px;
+
+  width:48px;
+  height:48px;
+  border-radius:5px;
+}
+
+#tweets li .screen_name{
+  color:#BBBBBB;
+}
+
+#tweets li .time{
+  color:#BBBBBB;
+}
+
+#tweets li .text{
+
+}
