@@ -18,7 +18,7 @@ twitter アカウントを使って signin を行います。
 アプリケーションページで "Permissions" を "Read only" から "Read and Write" に変更します。
 この変更をしないとツイートできません。
 5. Access Token を発行する。  
-"Regenerate my access token" をクリックしてアクセストークンを発行します。
+"Create my access token" をクリックしてアクセストークンを発行します。
 "Access level" が　"Read and Write" になっていることを確認します。
 
 これで設定完了です。
