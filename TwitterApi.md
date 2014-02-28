@@ -5,19 +5,19 @@ Twitter API を利用してタイムラインを読んだりツイートした�
 
 ## 手順
 
-1. twitter アカウントを作成する。
+1. twitter アカウントを作成する。  
 既にアカウントを持っている人はそれを使っても構いません。
 https://twitter.com/
-2. twitter 開発者登録をする。
-https://dev.twitter.com/
+2. twitter 開発者登録をする。  
+https://dev.twitter.com/  
 twitter アカウントを使って signin を行います。
-3. アプリを登録する。
+3. アプリを登録する。  
 "My Applications" から "Create New App" をクリックして "Name" にアプリ名を入力します。
 "Name" は変更不可ですが、変えたくなったら新しく作成しなおせば問題ありません。
-4. Permissions を変更する。
+4. Permissions を変更する。  
 アプリケーションページで "Permissions" を "Read only" から "Read and Write" に変更します。
 この変更をしないとツイートできません。
-5. Access Token を発行する。
+5. Access Token を発行する。  
 "Regenerate my access token" をクリックしてアクセストークンを発行します。
 "Access level" が　"Read and Write" になっていることを確認します。
 
@@ -34,7 +34,7 @@ Windows の人は curl が入ってないから使えないかもしれない。
 1. Test OAuth をクリックする。
 2. OAuth Settings の4つの項目に値がすべて入っていることを確認する。
 3. Request Settings で　Request type を GET にする。
-4. Request URI に以下の URI を入力する。
+4. Request URI に以下の URI を入力する。  
 https://api.twitter.com/1.1/statuses/home_timeline.json
 5. See OAuth signature for this request をクリックする。
 6. cURL command の項目をクリップボードにコピーします。
@@ -45,9 +45,9 @@ https://api.twitter.com/1.1/statuses/home_timeline.json
 1. Test OAuth をクリックする。
 2. OAuth Settings の4つの項目に値がすべて入っていることを確認する。
 3. Request Settings で　Request type を POST にする。
-4. Request URI に以下の URI を入力する。
+4. Request URI に以下の URI を入力する。  
 https://api.twitter.com/1.1/statuses/update.json
-5. Request query に以下の URI を入力する。
+5. Request query に以下の URI を入力する。  
 status=test
 6. See OAuth signature for this request をクリックする。
 7. cURL command の項目をクリップボードにコピーします。
