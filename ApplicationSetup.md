@@ -11,7 +11,7 @@ cd playexample
 3. 認証情報を入力する。  
 cp config/twitter.conf.example config/twitter.conf  
 twitter.conf の中身に記入する。  
-認証情報は https://apps.twitter.com/app/<app_id>/keys に書いてある。
+認証情報は https://apps.twitter.com/app/(app_id)/keys に書いてある。
 4. コンパイルを実行する。  
 sbt compile
 5. アプリケーションを起動する。  
@@ -46,3 +46,9 @@ Twitter API に用意してある機能をそのまま使うだけです。
 @twitter_id も文頭に追加できるといいですね。
 3. 自主改良。  
 URL のリンク機能など欲しい機能があれば各自追加してみましょう。
+
+## 参考文献
+
+* [Twitter RestAPI](https://dev.twitter.com/docs/api/1.1)
+* [Scala Doc](http://www.scala-lang.org/api)
+* [Play Framework](http://www.playframework-ja.org/)

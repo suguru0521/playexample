@@ -27,7 +27,7 @@ twitter アカウントを使って signin を行います。
 ## 動作確認
 
 アプリケーションページで twitter の timeline を読むのと、tweet をするテストを行います。
-Windows の人は curl が入ってないから使えないかもしれない。
+Windows の人は curl が入ってないから動作確認できないかもしれない。
 
 ### timeline を読む
 
@@ -52,7 +52,3 @@ status=test
 6. See OAuth signature for this request をクリックする。
 7. cURL command の項目をクリップボードにコピーします。
 8. ターミナルに貼り付けて curl command を実行します。
-
-## 参考文献
-
-* [Twitter RestAPI](https://dev.twitter.com/docs/api/1.1)
