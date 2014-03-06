@@ -49,6 +49,15 @@ URL のリンク機能など欲しい機能があれば各自追加してみま�
 
 ## 参考文献
 
-* [Twitter RestAPI](https://dev.twitter.com/docs/api/1.1)
-* [Scala Doc](http://www.scala-lang.org/api)
-* [Play Framework](http://www.playframework-ja.org/)
+以下を見て勉強しましょう。
+
+* Scala
+    - [Scala Doc](http://www.scala-lang.org/api)
+    - [Scala CheatSheets](http://docs.scala-lang.org/cheatsheets)
+    - [Scala Cookbook](http://xerial.org/scala-cookbook)
+    - [ひしだまさんのサイト](http://www.ne.jp/asahi/hishidama/home/tech/scala)
+* Others
+    - [Twitter Developers](https://dev.twitter.com)
+    - [Twitter RestAPI](https://dev.twitter.com/docs/api/1.1)
+    - [Play Framework](http://www.playframework-ja.org)
+    - [Play2TwitterClient](https://github.com/tattyamm/Play2TwitterClient)
