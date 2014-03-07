@@ -14,6 +14,7 @@ twitter アカウントを使って signin を行います。
 3. アプリを登録する。  
 "My Applications" から "Create New App" をクリックして "Name" にアプリ名を入力します。
 "Name" は変更不可ですが、変えたくなったら新しく作成しなおせば問題ありません。
+"Description","Website" は適当に入力しておきましょう。
 4. Permissions を変更する。  
 アプリケーションページで "Permissions" を "Read only" から "Read and Write" に変更します。
 この変更をしないとツイートできません。
@@ -52,3 +53,20 @@ status=test
 6. See OAuth signature for this request をクリックする。
 7. cURL command の項目をクリップボードにコピーします。
 8. ターミナルに貼り付けて curl command を実行します。
+
+## 認証情報の確認
+
+1. twitter developers ページにブラウザからアクセスする。  
+https://dev.twitter.com/
+2. 右上のアイコンにカーソルを合わせると出てくる "My Applications" へ移動する。
+3. 作成したアプリケーションをクリックする。
+4. メニューの "API Keys" をクリックする。
+5. 以下の情報をアプリケーション開発で使います。
+* Application settings
+    - API key (ConsumerKey)
+    - API secret (ConsumerSecret)
+* Your access token
+    - Access token
+    - Access token secret
+
+これらの情報(特にConsumerSecret)は公開しないように気をつけましょう。
